@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Hagerstown Health | Chiropractic &amp; Physical Therapy — Hagerstown, MD</title>
+<meta name="description" content="Hagerstown Health, LLC — chiropractic and physical therapy in the north end of Hagerstown, MD, serving the four-state area. Herald-Mail Tri-State's Best Chiropractor 2020–2025 and Best Physical Therapist 2021–2025. (301) 791-7111.">
+<meta property="og:title" content="Hagerstown Health | Chiropractic &amp; Physical Therapy">
+<meta property="og:description" content="Holistic, one-on-one chiropractic and physical therapy care from doctors with decades of ties to Washington County. 1329 Pennsylvania Avenue, Hagerstown, MD.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://haghealth1.bawai.org/">
+<meta property="og:image" content="https://haghealth1.bawai.org/img/building.jpg">
+<link rel="canonical" href="https://haghealth1.bawai.org/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Instrument+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#132420;
+  --ink-soft:#2B3D37;
+  --paper:#FFFFFF;
+  --sand:#F4F1EA;
+  --teal:#0E6E58;
+  --teal-soft:#14886C;
+  --clay:#B5543A;
+  --gold:#C99A3C;
+  --muted:#64716C;
+  --line:rgba(19,36,32,.12);
+  --serif:'Fraunces','Cormorant Garamond',Georgia,serif;
+  --sans:'Instrument Sans','Nunito Sans',Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+/* Ticker */
+.ticker{background:var(--ink);color:rgba(255,255,255,.85);font-size:12.5px;letter-spacing:2px;text-transform:uppercase;font-weight:600;text-align:center;padding:10px 20px}
+.ticker b{color:var(--gold);font-weight:700}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1320px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 32px;gap:24px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{height:44px;width:auto}
+.brand-txt{line-height:1.15}
+.brand-txt b{display:block;font-family:var(--serif);font-size:19px;font-weight:600;letter-spacing:-.2px}
+.brand-txt span{font-size:10.5px;letter-spacing:2.4px;text-transform:uppercase;color:var(--muted);font-weight:700}
+.nav-links{display:flex;gap:32px;list-style:none;align-items:center}
+.nav-links a{text-decoration:none;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--ink-soft);transition:color .2s}
+.nav-links a:hover{color:var(--teal)}
+.nav-cta{background:var(--teal);color:#fff;font-size:12px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;padding:14px 24px;text-decoration:none;transition:background .2s;white-space:nowrap}
+.nav-cta:hover{background:var(--ink)}
+@media(max-width:1080px){.nav-links{display:none}}
+@media(max-width:560px){.nav-cta{display:none}.brand-txt span{display:none}}
+
+/* Home hero */
+.hero{background:var(--ink);overflow:hidden}
+.hero-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch}
+.hero-copy{padding:104px 60px 88px 32px}
+.hero-eyebrow{font-size:12px;letter-spacing:4.4px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:26px}
+.hero h1{font-family:var(--serif);font-weight:400;color:#fff;font-size:clamp(46px,5.6vw,80px);line-height:1.02;letter-spacing:-1.2px;max-width:640px}
+.hero h1 em{font-style:italic;color:var(--teal-soft)}
+.hero-sub{margin-top:30px;max-width:470px;color:rgba(255,255,255,.74);font-size:18px;font-weight:300;line-height:1.8}
+.hero-actions{margin-top:42px;display:flex;gap:16px;flex-wrap:wrap}
+.btn-solid{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;font-size:12px;font-weight:700;letter-spacing:2.2px;text-transform:uppercase;padding:18px 32px;transition:background .2s}
+.btn-solid:hover{background:var(--teal-soft)}
+.btn-line{display:inline-block;border:1px solid rgba(255,255,255,.34);color:#fff;text-decoration:none;font-size:12px;font-weight:700;letter-spacing:2.2px;text-transform:uppercase;padding:18px 32px;transition:all .2s}
+.btn-line:hover{border-color:var(--gold);color:var(--gold)}
+.hero-figure{position:relative;min-height:600px}
+.hero-figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-figure::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink) 0%,rgba(19,36,32,.18) 42%,rgba(19,36,32,0) 100%)}
+.hero-plate{position:absolute;left:0;right:0;bottom:0;z-index:2;background:rgba(19,36,32,.92);border-top:1px solid rgba(201,154,60,.3);padding:22px 32px}
+.hero-plate p{font-family:var(--serif);font-size:18px;color:#fff;font-weight:500;line-height:1.45;letter-spacing:-.2px}
+.hero-plate span{display:block;font-size:11px;letter-spacing:2.6px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px}
+@media(max-width:1080px){.hero-grid{grid-template-columns:1fr}.hero-copy{padding:80px 32px 64px}.hero-figure{min-height:420px}}
+
+/* Sections */
+.section{padding:112px 32px}
+.section-inner{max-width:1240px;margin:0 auto}
+.eyebrow{font-size:11.5px;letter-spacing:4px;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:18px}
+.h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.2vw,54px);line-height:1.08;letter-spacing:-.8px;margin-bottom:22px}
+.h2 em{font-style:italic;color:var(--teal)}
+.lede{max-width:640px;color:var(--muted);font-size:18px;font-weight:300;line-height:1.8}
+.sand{background:var(--sand)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:48px;flex-wrap:wrap;margin-bottom:70px}
+
+/* Awards strip */
+.awards{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper)}
+.awards-inner{max-width:1240px;margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:repeat(4,1fr);gap:44px 40px}
+.award b{display:block;font-family:var(--serif);font-size:44px;font-weight:500;color:var(--teal);line-height:1;letter-spacing:-1px}
+.award span{display:block;font-size:12px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:12px;line-height:1.55}
+@media(max-width:980px){.awards-inner{grid-template-columns:1fr 1fr;gap:36px}}
+@media(max-width:520px){.awards-inner{grid-template-columns:1fr}}
+
+/* Cards (service previews) */
+.card-row{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.card{border-top:2px solid var(--teal);padding-top:28px}
+.card h3{font-family:var(--serif);font-size:28px;font-weight:500;letter-spacing:-.4px;margin-bottom:14px}
+.card p{color:var(--ink-soft);font-size:16px;font-weight:300;line-height:1.8}
+.card .svc-tag{display:inline-block;margin-top:20px;font-size:11px;letter-spacing:2.2px;text-transform:uppercase;color:var(--teal);font-weight:700;border:1px solid rgba(14,110,88,.4);padding:7px 14px}
+@media(max-width:980px){.card-row{grid-template-columns:1fr}}
+
+/* Conditions grid */
+.cond-intro{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:64px}
+@media(max-width:980px){.cond-intro{grid-template-columns:1fr;gap:28px}}
+.cond-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0 44px}
+.cond-col ul{list-style:none}
+.cond-col li{font-size:16px;color:var(--ink-soft);padding:11px 0;border-bottom:1px solid var(--line);font-weight:400}
+.cond-col li::before{content:"—";color:var(--clay);margin-right:12px;font-weight:700}
+@media(max-width:980px){.cond-grid{grid-template-columns:1fr 1fr;gap:0 36px}}
+@media(max-width:520px){.cond-grid{grid-template-columns:1fr}}
+
+/* Team / providers */
+.doc{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start;padding:64px 0;border-bottom:1px solid var(--line)}
+.doc:first-of-type{padding-top:0}
+.doc:last-of-type{border-bottom:none}
+.doc-photo{position:relative}
+.doc-photo img{width:100%;height:520px;object-fit:cover;object-position:center top;background:var(--sand)}
+.doc-photo.round img{height:280px;width:280px;border-radius:50%;object-fit:cover}
+.doc-photo .badge{position:absolute;left:0;bottom:-14px;background:var(--teal);color:#fff;font-size:10.5px;letter-spacing:2px;text-transform:uppercase;font-weight:700;padding:9px 16px}
+.doc h3{font-family:var(--serif);font-size:38px;font-weight:400;letter-spacing:-.7px;line-height:1.06;margin-bottom:8px}
+.doc .creds{font-size:11.5px;letter-spacing:2.6px;text-transform:uppercase;color:var(--clay);font-weight:700;margin-bottom:22px}
+.doc p{color:var(--ink-soft);font-size:16px;font-weight:300;line-height:1.85;margin-bottom:14px;max-width:66ch}
+.staff-pair{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:24px}
+@media(max-width:980px){.doc{grid-template-columns:1fr;gap:36px}.doc-photo img{height:400px}.staff-pair{grid-template-columns:1fr;gap:44px}}
+
+/* About grid */
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:88px;align-items:start}
+.about-figure img{width:100%;height:560px;object-fit:cover}
+.about-figure figcaption{margin-top:16px;font-size:12.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);font-weight:600}
+.about-body p{color:var(--ink-soft);font-size:16.5px;font-weight:300;line-height:1.85;margin-bottom:16px;max-width:64ch}
+.quote-block{margin-top:56px;border-left:2px solid var(--clay);padding:6px 0 6px 28px}
+.quote-block p{font-family:var(--serif);font-size:22px;font-style:italic;line-height:1.5;color:var(--ink);font-weight:400}
+.quote-block span{display:block;margin-top:12px;font-size:11.5px;letter-spacing:2.4px;text-transform:uppercase;color:var(--muted);font-weight:700;font-style:normal}
+@media(max-width:980px){.about-grid{grid-template-columns:1fr;gap:56px}.about-figure img{height:400px}}
+
+/* Visit / contact */
+.visit-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:80px}
+@media(max-width:980px){.visit-grid{grid-template-columns:1fr;gap:48px}}
+.visit-block{margin-bottom:36px}
+.visit-block h3{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:12px}
+.visit-block p{font-family:var(--serif);font-size:23px;font-weight:500;line-height:1.45;letter-spacing:-.3px}
+.visit-block p.sub{font-family:var(--sans);font-size:15px;font-weight:300;color:var(--muted);margin-top:8px;letter-spacing:0}
+.visit-block a{text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s}
+.visit-block a:hover{border-color:var(--teal)}
+.portal{background:var(--ink);color:#fff;padding:34px 36px;margin-bottom:36px}
+.portal b{font-family:var(--serif);font-size:25px;font-weight:500;color:var(--gold);display:block;margin-bottom:10px;letter-spacing:-.3px}
+.portal span{font-size:15px;color:rgba(255,255,255,.74);font-weight:300;line-height:1.7;display:block}
+.hours-table{width:100%;border-collapse:collapse}
+.hours-table td{padding:11px 0;border-bottom:1px solid var(--line);font-size:16px}
+.hours-table td:first-child{font-weight:600;letter-spacing:.4px}
+.hours-table td:last-child{text-align:right;color:var(--muted)}
+.map-frame{margin-top:28px;border:1px solid var(--line);line-height:0}
+.map-frame iframe{width:100%;height:340px;border:0}
+.ins-list{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
+.ins-list span{font-family:var(--serif);font-size:19px;font-weight:500;border:1px solid var(--line);padding:11px 22px;color:var(--ink-soft);letter-spacing:.2px}
+
+/* CTA band */
+.cta-band{background:var(--teal);color:#fff;padding:84px 32px;text-align:center}
+.cta-band h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4vw,50px);letter-spacing:-.8px;max-width:820px;margin:0 auto 18px}
+.cta-band p{color:rgba(255,255,255,.8);font-weight:300;max-width:56ch;margin:0 auto 36px;font-size:17px}
+.cta-band .btn-line{border-color:rgba(255,255,255,.5)}
+.cta-band .btn-line:hover{border-color:#fff;color:#fff}
+
+/* Footer */
+.footer{background:var(--ink);color:rgba(255,255,255,.6);padding:76px 32px 40px}
+.footer-inner{max-width:1240px;margin:0 auto}
+.footer-top{display:flex;justify-content:space-between;gap:48px;flex-wrap:wrap;margin-bottom:52px}
+.footer-brand{display:flex;align-items:center;gap:14px}
+.footer-brand img{height:46px;width:auto;background:#fff;padding:6px 10px}
+.footer-brand p{font-family:var(--serif);font-size:26px;color:#fff;font-weight:500;letter-spacing:-.3px;line-height:1.2}
+.footer-brand span{display:block;font-family:var(--sans);font-size:11px;letter-spacing:2.4px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:6px}
+.footer-addr{font-size:15px;font-weight:300;line-height:1.8;max-width:280px}
+.footer-links{display:flex;gap:26px;flex-wrap:wrap;align-content:flex-start}
+.footer-links a{color:rgba(255,255,255,.62);text-decoration:none;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:28px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;font-weight:300}
+.footer-bottom a{color:var(--gold);text-decoration:none;font-weight:600}
+.credit{font-size:11.5px;letter-spacing:1.4px;text-transform:uppercase}
+
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Hagerstown Health: Chiropractic & Physical Therapy",
+  "image": "https://haghealth1.bawai.org/img/building.jpg",
+  "url": "https://haghealth1.bawai.org/",
+  "telephone": "+1-301-791-7111",
+  "email": "HagerstownHealth@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1329 Pennsylvania Avenue",
+    "addressLocality": "Hagerstown",
+    "addressRegion": "MD",
+    "postalCode": "21742",
+    "addressCountry": "US"
+  },
+  "geo": {"@type": "GeoCoordinates", "latitude": "39.6646978", "longitude": "-77.7192532"},
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday"], "opens": "08:00", "closes": "12:00"}
+  ]
+}
+</script>
+</head>
+<body>
+<div class="ticker"><b>2026 Chamber of Commerce</b> Small Business of the Year Finalist</div>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <img src="img/logo.png" alt="Hagerstown Health logo">
+      <span class="brand-txt"><b>Hagerstown Health</b><span>Chiropractic &amp; PT</span></span>
+    </a>
+    <ul class="nav-links"><li><a href="#services">Services</a></li><li><a href="#providers">Providers</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+    <a class="nav-cta" href="tel:+130****7111">(301) 791-7111</a>
+  </div>
+</nav>
+<header class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="hero-eyebrow">1329 Pennsylvania Avenue &bull; Hagerstown, MD</p>
+      <h1>Care that treats the <em>cause</em>, not just the symptom.</h1>
+      <p class="hero-sub">Chiropractic and physical therapy from doctors whose ties to Washington County span decades — and, for some, generations. Holistic, one-on-one, and built around you.</p>
+      <div class="hero-actions">
+        <a class="btn-solid" href="#contact">Schedule Your Appointment</a>
+        <a class="btn-line" href="#services">See What We Treat</a>
+      </div>
+    </div>
+    <div class="hero-figure">
+      <img src="img/hero2.jpg" alt="Chiropractor performing a precise adjustment on a relaxed patient at Hagerstown Health">
+      <div class="hero-plate">
+        <span>Recognized by your neighbors</span>
+        <p>Herald-Mail Tri-State's Best Chiropractor: 2020–2025<br>Best Physical Therapist: 2021–2025</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="awards">
+  <div class="awards-inner">
+    <div class="award"><b>600+</b><span>Five-star patient reviews on JaneApp</span></div>
+    <div class="award"><b>6&times;</b><span>Herald-Mail Tri-State's Best Chiropractor, 2020–2025</span></div>
+    <div class="award"><b>3&times;</b><span>Verstandig Media's Best Chiropractic Clinic, 2023–2025</span></div>
+    <div class="award"><b>45<span style="font-size:22px">min</span></b><span>One-on-one physical therapy appointments</span></div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="section-inner">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Three Disciplines</p>
+        <h2 class="h2">One practice. <em>Three lines of care.</em></h2>
+      </div>
+      <p class="lede" style="margin:0">Each with its own clinician, its own body of training, and its own treatment plan written around you. No referral required to be seen.</p>
+    </div>
+    <div class="card-row">
+      <div class="card">
+        <h3>Chiropractic Care</h3>
+        <p>Active, full-body healthcare without drugs or surgery. Manual adjustments and soft-tissue work decrease muscle tension, reduce nerve compression, and restore joint mobility — helping the body return to its natural balance.</p>
+        <span class="svc-tag">Dr. Brenna Bacon Ranieli, DC</span>
+      </div>
+      <div class="card">
+        <h3>Physical Therapy</h3>
+        <p>Direct, one-on-one care for 45 minutes — not a rotation through a gym floor. Examination and individualized plans to promote movement, reduce pain, restore function, and prevent disability before it starts.</p>
+        <span class="svc-tag">Dr. Matthew Ranieli, DPT, MBA</span>
+      </div>
+      <div class="card">
+        <h3>Women's Health</h3>
+        <p>Natural support through every stage of life: thyroid function, adrenal fatigue, PMS symptom management, pelvic health, core strengthening, and diaphragmatic breathing — from a Certified Women's Health Specialist.</p>
+        <span class="svc-tag">Certified Women's Health Specialist</span>
+      </div>
+    </div>
+
+    <div class="cond-intro" style="margin-top:110px">
+      <div>
+        <p class="eyebrow">Conditions We Treat</p>
+        <h2 class="h2">If it hurts to move, <em>start here.</em></h2>
+      </div>
+      <p class="lede" style="margin:0">From lower back pain and migraines to sports injuries, vertigo, and pre- and post-surgical rehab — chiropractic and/or physical therapy may be effective for dozens of conditions.</p>
+    </div>
+    <div class="cond-grid" style="grid-template-columns:repeat(3,1fr)">
+      <div class="cond-col"><ul>
+        <li>Lower Back Pain</li>
+        <li>Neck and Arm Pain</li>
+        <li>Headaches &amp; Migraines</li>
+        <li>Sciatica</li>
+        <li>Herniated Discs</li>
+        <li>Pinched Nerves</li>
+      </ul></div>
+      <div class="cond-col"><ul>
+        <li>Sports Injuries</li>
+        <li>Rotator Cuff Injuries</li>
+        <li>Arthritis</li>
+        <li>Joint Replacement</li>
+        <li>Pre- and Post-Surgical Rehab</li>
+        <li>Auto Accidents</li>
+      </ul></div>
+      <div class="cond-col"><ul>
+        <li>Dizziness &amp; Vertigo</li>
+        <li>Plantar Fasciitis</li>
+        <li>Carpal Tunnel Syndrome</li>
+        <li>Fibromyalgia</li>
+        <li>Pregnancy</li>
+        <li>Work-related Injuries</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section sand" id="providers">
+  <div class="section-inner">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Your Providers</p>
+        <h2 class="h2" style="max-width:760px">Two doctors. Two North Hagerstown diplomas. <em>One-on-one care.</em></h2>
+      </div>
+      <p class="lede" style="margin:0">For the providers and staff, ties to this area span decades to generations — a commitment you can feel the moment you walk in.</p>
+    </div>
+    <article class="doc">
+      <div class="doc-photo">
+        <img src="img/brenna.jpg" alt="Dr. Brenna Bacon Ranieli, DC, chiropractor and owner of Hagerstown Health">
+        <span class="badge">Practicing since 2010</span>
+      </div>
+      <div>
+        <h3>Dr. Brenna Bacon Ranieli</h3>
+        <p class="creds">Doctor of Chiropractic &bull; Certified Women&#39;s Health Specialist</p>
+        <p>Born and raised in Hagerstown, Dr. Ranieli graduated from North Hagerstown High School in 2004. She attended the University of Maryland, College Park and graduated from the Honors Program in 2007. Pursuing higher education at National University of Health Sciences in Lombard, IL, she received a Doctor of Chiropractic degree in 2010 — the same year she married her high school sweetheart, Matthew. Just a few months later she started her practice and has been providing quality care ever since.</p>
+        <p>As her family has grown, so has her commitment to our community. She has continued her education and completed extensive coursework in functional nutrition, and has recently completed all requirements to become qualified as a Certified Women&#39;s Health Specialist (CWHS). She served as Official Chiropractor of the Hagerstown Suns, 2012–2020, and currently serves her second term on the Antietam Chapter of the DAR.</p>
+      </div>
+    </article>
+    <article class="doc">
+      <div class="doc-photo">
+        <img src="img/matthew.jpg" alt="Dr. Matthew Ranieli, DPT, MBA, physical therapist at Hagerstown Health">
+        <span class="badge">Best PT, 2021–2025</span>
+      </div>
+      <div>
+        <h3>Dr. Matthew Ranieli</h3>
+        <p class="creds">DPT, MBA &bull; Doctor of Physical Therapy</p>
+        <p>Dr. Matthew Ranieli was voted the Herald-Mail Tri-State&#39;s Best Physical Therapist in 2021–2025. He is a former Certified Strength and Conditioning Specialist and is currently certified in neuromuscular taping, instrument-assisted soft tissue mobilization, cupping, the Functional Movement Screen, and Selective Functional Movement Assessment.</p>
+        <p>Dr. Ranieli has also completed extensive continuing education in manual and manipulation therapy, allowing him to address most musculoskeletal conditions from head to toe, plus a vestibular and dizziness treatment certification. He earned his Doctorate of Physical Therapy from Midwestern University (2012) and his MBA from Western Governors University (2019), and is currently serving his second term as president of the Hagerstown Rotary Club.</p>
+      </div>
+    </article>
+    <div class="staff-pair">
+      <article class="doc" style="grid-template-columns:1fr;padding:64px 0 0;border:none;gap:28px">
+        <div class="doc-photo round"><img src="img/kelly.png" alt="Kelly Sauser, office manager and billing specialist at Hagerstown Health"></div>
+        <div>
+          <h3 style="font-size:31px">Kelly Sauser</h3>
+          <p class="creds">Office Manager &amp; Billing Specialist</p>
+          <p>Kelly has been an office manager for over 12 years in the chiropractic field, and worked with two local chiropractors while obtaining her Maryland Chiropractic Assistant license in November 2012. She moved to Washington County in 2004 with her husband, Nathan — a paramedic firefighter for Washington County — and their three children, and spent many years working and volunteering for Washington County Public Schools.</p>
+        </div>
+      </article>
+      <article class="doc" style="grid-template-columns:1fr;padding:64px 0 0;border:none;gap:28px">
+        <div class="doc-photo round"><img src="img/tiffani.png" alt="Tiffani Collier, receptionist and patient assistance coordinator at Hagerstown Health"></div>
+        <div>
+          <h3 style="font-size:31px">Tiffani Collier</h3>
+          <p class="creds">Receptionist &amp; Patient Assistance Coordinator</p>
+          <p>Tiffani is our newest staff member — receptionist and patient assistance coordinator with a strong background in customer service and extensive managerial experience. She is a native of Hagerstown, graduating from South High in 2004. She has one daughter, two dogs and three cats, and enjoys watching her daughter play soccer, relaxing at home, and anything Halloween.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <figure class="about-figure">
+        <img src="img/building.jpg" alt="Hagerstown Health practice building at 1329 Pennsylvania Avenue">
+        <figcaption>1329 Pennsylvania Avenue &bull; North end of Hagerstown</figcaption>
+      </figure>
+      <div class="about-body">
+        <p class="eyebrow">About the Practice</p>
+        <h2 class="h2">Small-town office. <em>Modern</em> equipment.</h2>
+        <p>Through holistic care, your aches, pains and concerns are addressed in order to improve your health and well-being — the expertise of experienced doctors and modern equipment combined with the comfortable feel of a small-town office.</p>
+        <p>Patients are assured to receive only the finest quality care using proven chiropractic techniques, physical therapy, therapeutic exercise and nutritional counseling.</p>
+        <div class="quote-block">
+          <p>"The doctor of the future will give no medicine, but will instruct his patient in the care of the human frame, in diet and in the cause and prevention of disease."</p>
+          <span>Thomas Edison</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section sand" id="contact">
+  <div class="section-inner">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Contact &amp; Hours</p>
+        <h2 class="h2">Drop us a line — <em>a person answers.</em></h2>
+      </div>
+      <p class="lede" style="margin:0">New patients are encouraged to call and schedule their initial appointment: 60 minutes for chiropractic, 45 minutes one-on-one for physical therapy. No referral needed.</p>
+    </div>
+    <div class="visit-grid">
+      <div>
+        <div class="portal">
+          <b>Scheduling</b>
+          <span>Appointments are booked through the office and managed in the JaneApp patient portal, where you can fill out intake forms, update personal information, and view scheduled appointments. Referrals are not required — though some insurance plans may require one for coverage.</span>
+        </div>
+        <div class="visit-block">
+          <h3>Address</h3>
+          <p>1329 Pennsylvania Avenue<br>Hagerstown, MD 21742</p>
+        </div>
+        <div class="visit-block">
+          <h3>Phone</h3>
+          <p><a href="tel:+130****7111">(301) 791-7111</a></p>
+          <p class="sub">Second line: <a href="tel:+130****7119">(301) 791-7119</a></p>
+        </div>
+        <div class="visit-block">
+          <h3>Email</h3>
+          <p style="font-size:19px">HagerstownHealth@gmail.com</p>
+        </div>
+        <div class="visit-block">
+          <h3>Insurance Accepted</h3>
+          <div class="ins-list">
+            <span>Aetna</span><span>BlueCross</span><span>BlueChoice</span><span>CareFirst BCBS</span><span>Cigna (PT only)</span><span>Humana</span><span>Medicare</span><span>United Healthcare</span><span>Worker&#39;s Comp</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="visit-block">
+          <h3>Hours</h3>
+          <table class="hours-table">
+            <tr><td>Monday</td><td>8:00 AM – 6:00 PM</td></tr>
+            <tr><td>Tuesday</td><td>8:00 AM – 6:00 PM</td></tr>
+            <tr><td>Wednesday</td><td>8:00 AM – 6:00 PM</td></tr>
+            <tr><td>Thursday</td><td>8:00 AM – 6:00 PM</td></tr>
+            <tr><td>Friday</td><td>8:00 AM – 12:00 PM</td></tr>
+            <tr><td>Saturday</td><td>Closed</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </table>
+        </div>
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps?q=1329+Pennsylvania+Avenue,+Hagerstown,+MD+21742&amp;output=embed" title="Map to Hagerstown Health, 1329 Pennsylvania Avenue, Hagerstown, MD 21742" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2>New patients: your first visit starts with a phone call.</h2>
+  <p>Contact the office to schedule your initial appointment — 60 minutes for chiropractic, 45 minutes one-on-one for physical therapy. No referral needed.</p>
+  <a class="btn-line" href="tel:+130****7111">Call Now</a>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <img src="img/logo.png" alt="Hagerstown Health logo">
+          <p>Hagerstown Health<span>Chiropractic &amp; Physical Therapy</span></p>
+        </div>
+        <p class="footer-addr" style="margin-top:22px">Hagerstown Health, LLC<br>1329 Pennsylvania Avenue<br>Hagerstown, MD 21742<br><a href="tel:+130****7111" style="text-decoration:none">(301) 791-7111</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#providers">Providers</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Hagerstown Health: Chiropractic &amp; Physical Therapy — All Rights Reserved. Concept mockup — not affiliated with the practice.</span>
+      <span class="credit">Concept redesign by <a href="https://digital-ethnicity.com/" target="_blank" rel="noopener">Digital Ethnicity</a></span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
